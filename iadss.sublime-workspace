@@ -3,10 +3,36 @@
 	{
 		"selected_items":
 		[
+			[
+				"o",
+				"open_flash_chart_object"
+			],
+			[
+				"open",
+				"OpenFlashChart"
+			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"contents": "Searching 153 files for \"require\"\n\n/home/parallels/Source/IADSS/dicom/Gemfile:\n   30  group :doc do\n   31    # bundle exec rake doc:rails generates the API under doc/api.\n   32:   gem 'sdoc', require: false\n   33  end\n   34  \n\n/home/parallels/Source/IADSS/dicom/Rakefile:\n    2  # for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.\n    3  \n    4: require File.expand_path('../config/application', __FILE__)\n    5  \n    6  Dicom::Application.load_tasks\n\n/home/parallels/Source/IADSS/dicom/config.ru:\n    1  # This file is used by Rack-based servers to start the application.\n    2  \n    3: require ::File.expand_path('../config/environment',  __FILE__)\n    4  run Rails.application\n    5  \n\n/home/parallels/Source/IADSS/dicom/populate_dicom.rb:\n    1: # Libraries required:\n    2: require 'find'\n    3: require 'active_record'\n    4: require 'dicom'\n    5  \n    6  # Load your yml config from rails:\n    .\n    9  ActiveRecord::Base.establish_connection(db_config['development'])\n   10  # Load the custom model we created earlier:\n   11: require './app/models/examination'\n   12  # Discover all the files contained in the specified directory and all its sub-directories:\n   13  dirs = [\"/home/parallels/dicomdir\"]\n\n/home/parallels/Source/IADSS/dicom/app/assets/javascripts/application.js:\n   11  // about supported directives.\n   12  //\n   13: //= require jquery\n   14: //= require jquery_ujs\n   15: //= require turbolinks\n   16: //= require_tree .\n   17  \n\n/home/parallels/Source/IADSS/dicom/app/assets/stylesheets/application.css:\n    9   * compiled file, but it's generally better to create a new file per style scope.\n   10   *\n   11:  *= require_self\n   12:  *= require_tree .\n   13   */\n   14  \n\n/home/parallels/Source/IADSS/dicom/app/controllers/examinations_controller.rb:\n   77      # Never trust parameters from the scary internet, only allow the white list through.\n   78      def examination_params\n   79:       params.require(:examination).permit(:study, :name, :voltage, :current, :exposure)\n   80      end\n   81  end\n\n/home/parallels/Source/IADSS/dicom/bin/rails:\n    1  #!/usr/bin/env ruby\n    2  APP_PATH = File.expand_path('../../config/application',  __FILE__)\n    3: require_relative '../config/boot'\n    4: require 'rails/commands'\n    5  \n\n/home/parallels/Source/IADSS/dicom/bin/rake:\n    1  #!/usr/bin/env ruby\n    2: require_relative '../config/boot'\n    3: require 'rake'\n    4  Rake.application.run\n    5  \n\n/home/parallels/Source/IADSS/dicom/config/application.rb:\n    1: require File.expand_path('../boot', __FILE__)\n    2  \n    3: require 'rails/all'\n    4  \n    5: # Require the gems listed in Gemfile, including any gems\n    6  # you've limited to :test, :development, or :production.\n    7: Bundler.require(:default, Rails.env)\n    8  \n    9  module Dicom\n\n/home/parallels/Source/IADSS/dicom/config/boot.rb:\n    2  ENV['BUNDLE_GEMFILE'] ||= File.expand_path('../../Gemfile', __FILE__)\n    3  \n    4: require 'bundler/setup' if File.exists?(ENV['BUNDLE_GEMFILE'])\n    5  \n\n/home/parallels/Source/IADSS/dicom/config/environment.rb:\n    1  # Load the Rails application.\n    2: require File.expand_path('../application', __FILE__)\n    3  \n    4  # Initialize the Rails application.\n\n/home/parallels/Source/IADSS/dicom/test/test_helper.rb:\n    1  ENV[\"RAILS_ENV\"] ||= \"test\"\n    2: require File.expand_path('../../config/environment', __FILE__)\n    3: require 'rails/test_help'\n    4  \n    5  class ActiveSupport::TestCase\n\n/home/parallels/Source/IADSS/dicom/test/controllers/examinations_controller_test.rb:\n    1: require 'test_helper'\n    2  \n    3  class ExaminationsControllerTest < ActionController::TestCase\n\n/home/parallels/Source/IADSS/dicom/test/controllers/pie_controller_test.rb:\n    1: require 'test_helper'\n    2  \n    3  class PieControllerTest < ActionController::TestCase\n\n/home/parallels/Source/IADSS/dicom/test/helpers/examinations_helper_test.rb:\n    1: require 'test_helper'\n    2  \n    3  class ExaminationsHelperTest < ActionView::TestCase\n\n/home/parallels/Source/IADSS/dicom/test/helpers/pie_helper_test.rb:\n    1: require 'test_helper'\n    2  \n    3  class PieHelperTest < ActionView::TestCase\n\n/home/parallels/Source/IADSS/dicom/test/models/examination_test.rb:\n    1: require 'test_helper'\n    2  \n    3  class ExaminationTest < ActiveSupport::TestCase\n\n/home/parallels/Source/IADSS/dicom/vendor/plugins/open_flash_chart/Rakefile:\n    1: require 'rake'\n    2: require 'rake/testtask'\n    3: require 'rake/rdoctask'\n    4  \n    5  desc 'Default: run unit tests.'\n\n/home/parallels/Source/IADSS/dicom/vendor/plugins/open_flash_chart/init.rb:\n    1  # Include hook code here\n    2: require 'open_flash_chart_object'\n    3: require 'open_flash_chart'\n    4: require 'bar_base'\n    5: require 'bar'\n    6: require 'bar_3d'\n    7: require 'bar_glass'\n    8: require 'bar_sketch'\n    9: require 'bar_stack'\n   10: require 'h_bar'\n   11: require 'line_base'\n   12: require 'line'\n   13: require 'line_dot'\n   14: require 'line_hollow'\n   15: require 'pie'\n   16: require 'scatter'\n   17: require 'title'\n   18: require 'x_axis_label'\n   19: require 'x_axis_labels'\n   20: require 'x_axis'\n   21: require 'x_legend'\n   22: require 'y_axis_base'\n   23: require 'y_axis'\n   24: require 'y_axis_right'\n   25: require 'y_legend'\n   26  \n\n/home/parallels/Source/IADSS/dicom/vendor/plugins/open_flash_chart/lib/bar.rb:\n    1: require 'bar_base'\n    2: require 'bar_3d'\n    3: require 'bar_glass'\n    4  class Bar < BarBase\n    5    def initialize\n\n/home/parallels/Source/IADSS/dicom/vendor/plugins/open_flash_chart/lib/bar_glass.rb:\n    1: require 'bar_base'\n    2  \n    3  class BarGlass < BarBase\n\n/home/parallels/Source/IADSS/dicom/vendor/plugins/open_flash_chart/lib/bar_sketch.rb:\n    1: require 'bar_base'\n    2  class BarSketch < BarBase\n    3    def initialize(colour, outline_colour, fun_factor)\n\n/home/parallels/Source/IADSS/dicom/vendor/plugins/open_flash_chart/lib/bar_stack.rb:\n    1: require 'bar_base'\n    2  \n    3  class BarStackValue < OpenFlashChart\n\n/home/parallels/Source/IADSS/dicom/vendor/plugins/open_flash_chart/lib/line.rb:\n    1: require 'line_base'\n    2  class Line < LineBase\n    3    def initialize\n\n/home/parallels/Source/IADSS/dicom/vendor/plugins/open_flash_chart/lib/line_dot.rb:\n    1: require 'line_base'\n    2  class LineDot < LineBase\n    3    def initialize\n\n/home/parallels/Source/IADSS/dicom/vendor/plugins/open_flash_chart/lib/line_hollow.rb:\n    1: require 'line_base'\n    2  class LineHollow < LineBase\n    3    def initialize\n\n/home/parallels/Source/IADSS/dicom/vendor/plugins/open_flash_chart/lib/y_axis.rb:\n    1: require 'y_axis_base'\n    2  class YAxis < YAxisBase\n    3  end\n\n/home/parallels/Source/IADSS/dicom/vendor/plugins/open_flash_chart/lib/y_axis_right.rb:\n    1: require 'y_axis_base'\n    2  class YAxisRight < YAxisBase\n    3  end\n\n/home/parallels/Source/IADSS/dicom/vendor/plugins/open_flash_chart/test/open_flash_chart_test.rb:\n    1: require 'test/unit'\n    2  \n    3  class OpenFlashChartTest < Test::Unit::TestCase\n\n71 matches across 30 files\n",
+			"settings":
+			{
+				"buffer_size": 7082,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "dicom/app/controllers/pie_controller.rb",
+			"settings":
+			{
+				"buffer_size": 1033,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -32,16 +58,26 @@
 	},
 	"file_history":
 	[
+		"/home/parallels/.cache/.fr-OQr0sm/test_ofc_2/config/routes.rb",
+		"/home/parallels/Source/IADSS/dicom/config/routes.rb",
+		"/home/parallels/Source/IADSS/dicom/app/views/examinations/index.html.erb",
+		"/home/parallels/Source/IADSS/dicom/app/controllers/pie_controller.rb",
+		"/home/parallels/Source/IADSS/dicom/populate_dicom.rb",
+		"/home/parallels/Source/IADSS/dicom/app/views/pie/index.html.erb",
+		"/home/parallels/Source/IADSS/dicom/app/controllers/examinations_controller.rb",
+		"/home/parallels/Source/IADSS/dicom/.gitignore"
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 93.0,
 		"where_history":
 		[
+			"<open folders>",
+			""
 		]
 	},
 	"find_state":
@@ -49,6 +85,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"require",
+			"open_flash_chart",
+			"open_flash_chart_object",
 			"gedit.desktop"
 		],
 		"highlight": true,
@@ -68,8 +107,360 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"settings":
+					{
+						"buffer_size": 7082,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										192,
+										199
+									],
+									[
+										385,
+										392
+									],
+									[
+										627,
+										634
+									],
+									[
+										801,
+										808
+									],
+									[
+										818,
+										825
+									],
+									[
+										840,
+										847
+									],
+									[
+										871,
+										878
+									],
+									[
+										1074,
+										1081
+									],
+									[
+										1384,
+										1391
+									],
+									[
+										1410,
+										1417
+									],
+									[
+										1440,
+										1447
+									],
+									[
+										1470,
+										1477
+									],
+									[
+										1679,
+										1686
+									],
+									[
+										1703,
+										1710
+									],
+									[
+										1967,
+										1974
+									],
+									[
+										2223,
+										2230
+									],
+									[
+										2264,
+										2271
+									],
+									[
+										2377,
+										2384
+									],
+									[
+										2418,
+										2425
+									],
+									[
+										2535,
+										2542
+									],
+									[
+										2596,
+										2603
+									],
+									[
+										2633,
+										2640
+									],
+									[
+										2767,
+										2774
+									],
+									[
+										2968,
+										2975
+									],
+									[
+										3142,
+										3149
+									],
+									[
+										3345,
+										3352
+									],
+									[
+										3415,
+										3422
+									],
+									[
+										3579,
+										3586
+									],
+									[
+										3762,
+										3769
+									],
+									[
+										3937,
+										3944
+									],
+									[
+										4102,
+										4109
+									],
+									[
+										4258,
+										4265
+									],
+									[
+										4428,
+										4435
+									],
+									[
+										4450,
+										4457
+									],
+									[
+										4481,
+										4488
+									],
+									[
+										4668,
+										4675
+									],
+									[
+										4709,
+										4716
+									],
+									[
+										4743,
+										4750
+									],
+									[
+										4769,
+										4776
+									],
+									[
+										4790,
+										4797
+									],
+									[
+										4814,
+										4821
+									],
+									[
+										4841,
+										4848
+									],
+									[
+										4869,
+										4876
+									],
+									[
+										4896,
+										4903
+									],
+									[
+										4919,
+										4926
+									],
+									[
+										4946,
+										4953
+									],
+									[
+										4968,
+										4975
+									],
+									[
+										4994,
+										5001
+									],
+									[
+										5023,
+										5030
+									],
+									[
+										5044,
+										5051
+									],
+									[
+										5069,
+										5076
+									],
+									[
+										5092,
+										5099
+									],
+									[
+										5122,
+										5129
+									],
+									[
+										5153,
+										5160
+									],
+									[
+										5177,
+										5184
+									],
+									[
+										5203,
+										5210
+									],
+									[
+										5232,
+										5239
+									],
+									[
+										5256,
+										5263
+									],
+									[
+										5286,
+										5293
+									],
+									[
+										5400,
+										5407
+									],
+									[
+										5426,
+										5433
+									],
+									[
+										5450,
+										5457
+									],
+									[
+										5614,
+										5621
+									],
+									[
+										5767,
+										5774
+									],
+									[
+										5972,
+										5979
+									],
+									[
+										6131,
+										6138
+									],
+									[
+										6296,
+										6303
+									],
+									[
+										6467,
+										6474
+									],
+									[
+										6636,
+										6643
+									],
+									[
+										6796,
+										6803
+									],
+									[
+										6971,
+										6978
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "dicom/app/controllers/pie_controller.rb",
+					"settings":
+					{
+						"buffer_size": 1033,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								63,
+								122
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -129,6 +520,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 150.0,
+	"side_bar_width": 213.0,
 	"status_bar_visible": true
 }

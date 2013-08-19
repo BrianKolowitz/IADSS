@@ -1,0 +1,9 @@
+<p>This is the user view.</p>
+
+<div>
+    <ul class="example-animate-container">
+        <li class="animate-repeat" ng-repeat="user in users | filter:q">
+            [{{$index + 1}}] {{user.userName}}
+        </li>
+    </ul>
+</div>

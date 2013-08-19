@@ -1,0 +1,33 @@
+<h2>View Studies</h2>
+<table class='table table-striped'>
+    <caption>Research Studie(s)</caption>
+    <thead>
+    <tr>
+        <th>Accession</th>
+        <th>Name</th>
+        <th>Patient Id</th>
+        <th># Images</th>
+        <th>&nbsp;</th>
+        <th>&nbsp;</th>
+        <th>
+            <a href='/addStudy/{{study.id}}' class='btn pull-right'>
+                <i class='icon-plus'></i>
+            </a>
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat='study in studies'>
+        <td>{{study.accessionNumber}}</td>
+        <td>{{study.patient.name}}</td>
+        <td>{{study.patient.medicalRecordNumber}}</td>
+        <td>{{study.images.length}}</td>
+        <td>
+            <a href='/readStudy/{{study.id}}' class='.btn'>View</a></td>
+        <td>
+            <a href='/editStudy/{{study.id}}' class='.btn'>Edit</a></td>
+        <td>
+            <a href='/deleteStudy/{{study.id}}' class='.btn'>Delete</a></td>
+    </tr>
+    </tbody>
+</table>
