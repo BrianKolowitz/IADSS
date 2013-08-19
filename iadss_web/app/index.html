@@ -27,6 +27,41 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
+    <div class='navbar navbar-inverse navbar-fixed-top'>
+        <div class='navbar-inner'>
+            <div class='container-fluid'>
+                <button data-toggle='collapse' data-target='.nav-collapse' class='btn btn-navbar'>
+                    <span class='icon-bar'></span>
+                    <span class='icon-bar'></span>
+                    <span class='icon-bar'></span>
+                </button>
+                <a href='/' class='brand'>Research Coordinator</a>
+                <div class='nav-collapse collapse'>
+                    <div ng-hide='userLoggedIn'>
+                        <p class='navbar-text pull-right'>
+                            <a href='/login' ng-cloak class='navbar-link'>Login</a>
+                        </p>
+                    </div>
+                    <div ng-show='userLoggedIn'>
+                        <p class='navbar-text pull-right'>Logged in as: &nbsp;
+                            <a href=''#' ng-cloak class='navbar-link'>{{authenticatedUser}}
+                            &nbsp; | &nbsp;
+                            <a href='#' ng-cloak ng-click='logout($event)' class='navbar-link'>Logout</a>
+                            </a>
+                        </p>
+                    </div>
+                    <ul class='nav'>
+                        <li class='active'>
+                            <a href='/'>Home</a>
+                        </li>
+                        <li>
+                            <a href='/'>Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container" ng-view=""></div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
