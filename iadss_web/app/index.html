@@ -27,6 +27,7 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
+    <!-- navbar -->
     <div class='navbar navbar-inverse navbar-fixed-top'>
         <div class='navbar-inner'>
             <div class='container-fluid'>
@@ -62,7 +63,28 @@
             </div>
         </div>
     </div>
-    <div class="container" ng-view=""></div>
+
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <!-- sidebar -->
+            <div class="span3">
+                <div class='well sidebar-nav'>
+                    <ul class='nav nav-list'>
+                        <li class='nav-header'>
+                            Options
+                        </li>
+                        <li>
+                            <a href='/#/study'>Study List</a>
+                        </li>
+                        <li>
+                            <a href='/#/patient'>Patient List</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="span9" ng-view></div>
+        </div>
+    </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -104,6 +126,8 @@
         <script src="scripts/controllers/user.js"></script>
         <script src="scripts/services/study.js"></script>
         <script src="scripts/services/user.js"></script>
+        <script src="scripts/directives/iadssNavBar.js"></script>
+        <script src="scripts/controllers/readStudy.js"></script>
         <!-- endbuild -->
 </body>
 </html>

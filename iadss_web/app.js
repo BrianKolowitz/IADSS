@@ -37,7 +37,8 @@ app.get('/', function(request, response) {
 });
 
 app.get('/api/users', user.list);
-app.get('/api/studies', study.list);
+app.get('/api/studies', study.query);
+app.get('/api/studies/:studyId', study.get);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

@@ -15,6 +15,10 @@ angular.module('iadssWebApp', ['ngResource'])
         templateUrl: 'views/user.html',
         controller: 'UserCtrl'
       })
+      .when('/readStudy/:studyId', {
+        templateUrl: 'views/readStudy.html',
+        controller: 'ReadStudyCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

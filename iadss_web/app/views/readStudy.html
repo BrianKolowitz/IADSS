@@ -1,0 +1,31 @@
+<h2>View Study</h2>
+
+<p>
+    <label>Accession Number: {{study.accessionNumber}}</label>
+</p>
+<p>
+    <label>Patient Name: {{study.patient.name}}</label>
+</p>
+<p>
+    <label>Medical Record Number: {{study.patient.medicalRecordNumber}}</label>
+</p>
+<hr />
+<div class='row'>
+    <div class='row-fluid'>
+        <label class='pagination-centered'>{{study.images.length}} Image(s)</label>
+    </div>
+    <div class='row'>
+        <div class='span9'>
+            <!--!= partial('imageList.jade')-->
+        </div>
+    </div>
+</div>
+<hr />
+<div class='row'>
+    <a href='/editStudy/{{study.id}}' class='btn'>
+        <i class='icon-pencil'>Edit</i>
+    </a>
+    <a href='/deleteStudy/{{study.id}}' class='btn'>
+        <i class='icon-trash'>Delete</i>
+    </a>
+</div>

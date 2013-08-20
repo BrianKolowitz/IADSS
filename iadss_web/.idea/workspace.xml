@@ -1,21 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a3102a90-a3b3-435e-ac00-c5a687b7d976" name="Default" comment="" />
+    <list default="true" id="a3102a90-a3b3-435e-ac00-c5a687b7d976" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/npm-debug.log" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gruntfile.js" afterPath="$PROJECT_DIR$/Gruntfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/app.js" afterPath="$PROJECT_DIR$/app/scripts/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/main.css" afterPath="$PROJECT_DIR$/app/styles/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/study.html" afterPath="$PROJECT_DIR$/app/views/study.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/study.js" afterPath="$PROJECT_DIR$/routes/study.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="iadss_web.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/app.js" changelist="a3102a90-a3b3-435e-ac00-c5a687b7d976" time="1376853719548" ignored="false" />
+    <file path="/app.js" changelist="a3102a90-a3b3-435e-ac00-c5a687b7d976" time="1376958532002" ignored="false" />
     <file path="/user.js" changelist="a3102a90-a3b3-435e-ac00-c5a687b7d976" time="1376852570424" ignored="false" />
-    <file path="/study.js" changelist="a3102a90-a3b3-435e-ac00-c5a687b7d976" time="1376868526367" ignored="false" />
+    <file path="/study.js" changelist="a3102a90-a3b3-435e-ac00-c5a687b7d976" time="1376958616610" ignored="false" />
     <file path="/user.html" changelist="a3102a90-a3b3-435e-ac00-c5a687b7d976" time="1376851729876" ignored="false" />
     <file path="/orm_mapping.js" changelist="a3102a90-a3b3-435e-ac00-c5a687b7d976" time="1376851470989" ignored="false" />
     <file path="/orm_map.js" changelist="a3102a90-a3b3-435e-ac00-c5a687b7d976" time="1376868936279" ignored="false" />
-    <file path="/study.html" changelist="a3102a90-a3b3-435e-ac00-c5a687b7d976" time="1376869656616" ignored="false" />
+    <file path="/study.html" changelist="a3102a90-a3b3-435e-ac00-c5a687b7d976" time="1376957134725" ignored="false" />
     <file path="/passwords.js" changelist="a3102a90-a3b3-435e-ac00-c5a687b7d976" time="1376868790449" ignored="false" />
     <file path="/.gitignore" changelist="a3102a90-a3b3-435e-ac00-c5a687b7d976" time="1376869022979" ignored="false" />
-    <file path="/a.dummy" changelist="a3102a90-a3b3-435e-ac00-c5a687b7d976" time="1376873589384" ignored="false" />
+    <file path="/a.dummy" changelist="a3102a90-a3b3-435e-ac00-c5a687b7d976" time="1376954987732" ignored="false" />
     <file path="/layout.jade" changelist="a3102a90-a3b3-435e-ac00-c5a687b7d976" time="1376874559145" ignored="false" />
     <file path="/main.html" changelist="a3102a90-a3b3-435e-ac00-c5a687b7d976" time="1376874593670" ignored="false" />
+    <file path="/Dummy.txt" changelist="a3102a90-a3b3-435e-ac00-c5a687b7d976" time="1376875658011" ignored="false" />
+    <file path="/Gruntfile.js" changelist="a3102a90-a3b3-435e-ac00-c5a687b7d976" time="1376877644111" ignored="false" />
+    <file path="/index.html" changelist="a3102a90-a3b3-435e-ac00-c5a687b7d976" time="1376956680515" ignored="false" />
+    <file path="/iadssNavBar.js" changelist="a3102a90-a3b3-435e-ac00-c5a687b7d976" time="1376954923617" ignored="false" />
+    <file path="/readStudy.jade" changelist="a3102a90-a3b3-435e-ac00-c5a687b7d976" time="1376955660573" ignored="false" />
+    <file path="/main.css" changelist="a3102a90-a3b3-435e-ac00-c5a687b7d976" time="1376956963661" ignored="false" />
+    <file path="/readStudy.html" changelist="a3102a90-a3b3-435e-ac00-c5a687b7d976" time="1376957277667" ignored="false" />
+    <file path="/readStudy.js" changelist="a3102a90-a3b3-435e-ac00-c5a687b7d976" time="1376958332204" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,25 +58,25 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="72" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0">
+            <state line="40" column="42" selection-start="1040" selection-end="1040" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/index.html">
+      <file leaf-file-name="study.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/routes/study.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="10" selection-start="2957" selection-end="2957" vertical-scroll-proportion="-26.333334">
+            <state line="20" column="51" selection-start="517" selection-end="517" vertical-scroll-proportion="0.48622367">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/main.html">
+      <file leaf-file-name="api.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../research-us/node/researchus/routes/api.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="1" selection-start="25" selection-end="199" vertical-scroll-proportion="0.022222223">
+            <state line="242" column="2" selection-start="7132" selection-end="7429" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -65,7 +85,61 @@
       <file leaf-file-name="study.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/study.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="21" selection-start="21" selection-end="21" vertical-scroll-proportion="-0.0">
+            <state line="0" column="14" selection-start="14" selection-end="14" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="26" selection-start="553" selection-end="553" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="readStudy.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/readStudy.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="79" selection-start="241" selection-end="241" vertical-scroll-proportion="-5.625">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="readStudy.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/controllers/readStudy.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="23" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="study.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/services/study.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="0" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/controllers/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="study.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/controllers/study.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="2" selection-start="159" selection-end="159" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -78,25 +152,33 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/orm_mapping.js" />
-        <option value="$PROJECT_DIR$/app/views/user.html" />
-        <option value="$PROJECT_DIR$/app/scripts/services/user.js" />
-        <option value="$PROJECT_DIR$/routes/user.js" />
-        <option value="$PROJECT_DIR$/routes/study.js" />
-        <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/app/scripts/controllers/user.js" />
+        <option value="$PROJECT_DIR$/../../research-us/node/researchus/views/layout.jade" />
+        <option value="$PROJECT_DIR$/app/views/main.html" />
+        <option value="$PROJECT_DIR$/Gruntfile.js" />
+        <option value="/tmp/Gruntfile.js" />
+        <option value="$PROJECT_DIR$/app/scripts/directives/iadssNavBar.js" />
+        <option value="$PROJECT_DIR$/../../research-us/node/researchus/views/partials/readStudy.jade" />
+        <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/styles/main.css" />
+        <option value="$PROJECT_DIR$/app/views/study.html" />
+        <option value="$PROJECT_DIR$/app/views/readStudy.html" />
+        <option value="$PROJECT_DIR$/app/scripts/app.js" />
         <option value="$PROJECT_DIR$/app/scripts/services/study.js" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/study.js" />
-        <option value="$PROJECT_DIR$/orm_map.js" />
-        <option value="$PROJECT_DIR$/passwords.js" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/app/views/study.html" />
-        <option value="$PROJECT_DIR$/../../research-us/node/researchus/views/layout.jade" />
-        <option value="$PROJECT_DIR$/app/index.html" />
-        <option value="$PROJECT_DIR$/app/views/main.html" />
+        <option value="$PROJECT_DIR$/app/scripts/controllers/readStudy.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/routes/study.js" />
       </list>
     </option>
   </component>
@@ -106,7 +188,7 @@
     <option name="width" value="1615" />
     <option name="height" value="1026" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -161,6 +243,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="routes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iadss_web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iadss_web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -183,6 +279,108 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iadss_web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iadss_web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="styles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iadss_web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iadss_web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iadss_web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iadss_web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iadss_web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iadss_web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="directives" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iadss_web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iadss_web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -190,9 +388,10 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="appearance" />
-    <property name="options.searchVisible" value="true" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="last_opened_file_path" value="/usr/bin/node" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -249,9 +448,9 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19779006" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2883978" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24748744" sideWeight="0.80221" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24748744" sideWeight="0.7116022" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -326,110 +525,116 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/study.js">
+    <entry file="file://$PROJECT_DIR$/app/scripts/directives/iadssNavBar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="18" selection-start="139" selection-end="139" vertical-scroll-proportion="0.07042254" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/orm_map.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="62" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0528169" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="3" column="14" selection-start="59" selection-end="59" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/passwords.js">
+    <entry file="file://$PROJECT_DIR$/test/spec/directives/iadssNavBar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="82" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0">
+        <state line="10" column="45" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/bower_components/bootstrap-sass/package.json">
+    <entry file="file://$PROJECT_DIR$/../../research-us/node/researchus/views/partials/readStudy.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="24" column="16" selection-start="509" selection-end="509" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/../../research-us/node/researchus/views/index.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="12" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2274" column="0" selection-start="41138" selection-end="41138" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../test/Gruntfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="25" selection-start="533" selection-end="533" vertical-scroll-proportion="0.017688679">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="209" column="42" selection-start="5262" selection-end="5262" vertical-scroll-proportion="0.61180127">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="72" selection-start="355" selection-end="355" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/study.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="21" selection-start="21" selection-end="21" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../research-us/node/researchus/views/layout.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="47" selection-start="1847" selection-end="1847" vertical-scroll-proportion="0.0">
+        <state line="4" column="8" selection-start="56" selection-end="357" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="10" selection-start="2957" selection-end="2957" vertical-scroll-proportion="-26.333334">
+        <state line="38" column="45" selection-start="1829" selection-end="1832" vertical-scroll-proportion="-11.632653">
+          <folding>
+            <element signature="tag#div#0;tag#div#0;tag#div#1;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styles/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="21" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/main.html">
+    <entry file="file://$PROJECT_DIR$/app/views/study.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="1" selection-start="25" selection-end="199" vertical-scroll-proportion="0.022222223">
+        <state line="0" column="14" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/readStudy.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="79" selection-start="241" selection-end="241" vertical-scroll-proportion="-5.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="26" selection-start="553" selection-end="553" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/study.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="2" selection-start="159" selection-end="159" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/readStudy.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="23" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/services/study.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../research-us/node/researchus/routes/api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="242" column="2" selection-start="7132" selection-end="7429" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="42" selection-start="1040" selection-end="1040" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/study.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="51" selection-start="517" selection-end="517" vertical-scroll-proportion="0.48622367">
           <folding />
         </state>
       </provider>
