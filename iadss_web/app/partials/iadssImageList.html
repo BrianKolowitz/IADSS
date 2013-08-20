@@ -1,0 +1,36 @@
+<ul class='thumbnails.per3'>
+    <li ng-repeat='image in study.images' class='span3'>
+        <div ng-show='!readonly' class='thumbnail'>
+            <button ng-click='deleteImage(image)' class='btn pull-right'>
+                <i class='icon-trash'></i>
+            </button>
+            <a href='api/study/{{study.id}}/image/{{image.id}}' alt='{{image.originalFileName}}' target='_blank'>
+                <img ng-src='api/study/{{study.id}}/image/{{image.id}}' width='64' height='64' class='img-polaroid' />
+            </a>
+                <p>
+                    <label class='checkbox'>Is Normal?</label>
+                    <input type='checkbox' ng-model='image.normal'/>
+                </p>
+                <p>
+                    <textarea rows='3' ng-model='image.report'></textarea>
+                </p>
+                <p>
+                    <button ng-click='saveImage(image)' class='btn'>
+                        <i class='icon-ok'>Save</i>
+                    </button>
+                </p>
+        </div>
+        <div ng-show='readonly' class='thumbnail'>
+            <a href='api/study/{{study.id}}/image/{{image.id}}' alt='{{image.originalFileName}}' target='_blank'>
+                <img ng-src='api/study/{{study.id}}/image/{{image.id}}' width='64' height='64' class='img-polaroid' />
+            </a>
+            <p>
+                <label class='checkbox'>Is Normal?</label>
+                <input type='checkbox' ng-model='image.normal' disabled/>
+            </p>
+            <p>
+                {{image.report}}
+            </p>
+        </div>
+    </li>
+</ul>

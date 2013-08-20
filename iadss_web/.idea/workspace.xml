@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3102a90-a3b3-435e-ac00-c5a687b7d976" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/npm-debug.log" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gruntfile.js" afterPath="$PROJECT_DIR$/Gruntfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/app.js" afterPath="$PROJECT_DIR$/app/scripts/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/directives/iadssNavBar.js" afterPath="$PROJECT_DIR$/app/scripts/directives/iadssNavBar.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/main.css" afterPath="$PROJECT_DIR$/app/styles/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/study.html" afterPath="$PROJECT_DIR$/app/views/study.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/study.js" afterPath="$PROJECT_DIR$/routes/study.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/readStudy.html" afterPath="$PROJECT_DIR$/app/views/readStudy.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="iadss_web.iws" />
@@ -22,7 +15,7 @@
     <file path="/user.html" changelist="a3102a90-a3b3-435e-ac00-c5a687b7d976" time="1376851729876" ignored="false" />
     <file path="/orm_mapping.js" changelist="a3102a90-a3b3-435e-ac00-c5a687b7d976" time="1376851470989" ignored="false" />
     <file path="/orm_map.js" changelist="a3102a90-a3b3-435e-ac00-c5a687b7d976" time="1376868936279" ignored="false" />
-    <file path="/study.html" changelist="a3102a90-a3b3-435e-ac00-c5a687b7d976" time="1376957134725" ignored="false" />
+    <file path="/study.html" changelist="a3102a90-a3b3-435e-ac00-c5a687b7d976" time="1376959115235" ignored="false" />
     <file path="/passwords.js" changelist="a3102a90-a3b3-435e-ac00-c5a687b7d976" time="1376868790449" ignored="false" />
     <file path="/.gitignore" changelist="a3102a90-a3b3-435e-ac00-c5a687b7d976" time="1376869022979" ignored="false" />
     <file path="/a.dummy" changelist="a3102a90-a3b3-435e-ac00-c5a687b7d976" time="1376954987732" ignored="false" />
@@ -30,12 +23,16 @@
     <file path="/main.html" changelist="a3102a90-a3b3-435e-ac00-c5a687b7d976" time="1376874593670" ignored="false" />
     <file path="/Dummy.txt" changelist="a3102a90-a3b3-435e-ac00-c5a687b7d976" time="1376875658011" ignored="false" />
     <file path="/Gruntfile.js" changelist="a3102a90-a3b3-435e-ac00-c5a687b7d976" time="1376877644111" ignored="false" />
-    <file path="/index.html" changelist="a3102a90-a3b3-435e-ac00-c5a687b7d976" time="1376956680515" ignored="false" />
-    <file path="/iadssNavBar.js" changelist="a3102a90-a3b3-435e-ac00-c5a687b7d976" time="1376954923617" ignored="false" />
+    <file path="/index.html" changelist="a3102a90-a3b3-435e-ac00-c5a687b7d976" time="1376961044751" ignored="false" />
+    <file path="/iadssNavBar.js" changelist="a3102a90-a3b3-435e-ac00-c5a687b7d976" time="1376960746541" ignored="false" />
     <file path="/readStudy.jade" changelist="a3102a90-a3b3-435e-ac00-c5a687b7d976" time="1376955660573" ignored="false" />
     <file path="/main.css" changelist="a3102a90-a3b3-435e-ac00-c5a687b7d976" time="1376956963661" ignored="false" />
-    <file path="/readStudy.html" changelist="a3102a90-a3b3-435e-ac00-c5a687b7d976" time="1376957277667" ignored="false" />
+    <file path="/readStudy.html" changelist="a3102a90-a3b3-435e-ac00-c5a687b7d976" time="1376961924271" ignored="false" />
     <file path="/readStudy.js" changelist="a3102a90-a3b3-435e-ac00-c5a687b7d976" time="1376958332204" ignored="false" />
+    <file path="/iadssSideBar.js" changelist="a3102a90-a3b3-435e-ac00-c5a687b7d976" time="1376961011366" ignored="false" />
+    <file path="/imageList.jade" changelist="a3102a90-a3b3-435e-ac00-c5a687b7d976" time="1376961662140" ignored="false" />
+    <file path="/imageList.html" changelist="a3102a90-a3b3-435e-ac00-c5a687b7d976" time="1376961782653" ignored="false" />
+    <file path="/iadssImageList.js" changelist="a3102a90-a3b3-435e-ac00-c5a687b7d976" time="1376961851395" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,55 +52,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.js">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="42" selection-start="1040" selection-end="1040" vertical-scroll-proportion="0.0">
+            <state line="37" column="14" selection-start="1638" selection-end="1638" vertical-scroll-proportion="-18.125">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="study.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/routes/study.js">
+      <file leaf-file-name="iadssNavBar.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/directives/iadssNavBar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="51" selection-start="517" selection-end="517" vertical-scroll-proportion="0.48622367">
+            <state line="5" column="41" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="api.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../research-us/node/researchus/routes/api.js">
+      <file leaf-file-name="iadssSideBar.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/directives/iadssSideBar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="242" column="2" selection-start="7132" selection-end="7429" vertical-scroll-proportion="0.0">
+            <state line="12" column="0" selection-start="312" selection-end="312" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="study.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/study.html">
+      <file leaf-file-name="imageList.jade" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../research-us/node/researchus/views/partials/imageList.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="14" selection-start="14" selection-end="14" vertical-scroll-proportion="-0.0">
+            <state line="25" column="34" selection-start="1247" selection-end="1247" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
+      <file leaf-file-name="iadssImageList.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/partials/iadssImageList.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="26" selection-start="553" selection-end="553" vertical-scroll-proportion="0.0">
+            <state line="33" column="14" selection-start="94" selection-end="1570" vertical-scroll-proportion="-20.625">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="readStudy.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/readStudy.html">
+      <file leaf-file-name="iadssImageList.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/directives/iadssImageList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="79" selection-start="241" selection-end="241" vertical-scroll-proportion="-5.625">
+            <state line="8" column="10" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -118,28 +115,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="study.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/services/study.js">
+      <file leaf-file-name="readStudy.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/readStudy.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0">
+            <state line="18" column="42" selection-start="487" selection-end="487" vertical-scroll-proportion="0.47285464">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/controllers/main.js">
+      <file leaf-file-name="iadssSideBar.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/partials/iadssSideBar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="12" column="6" selection-start="293" selection-end="293" vertical-scroll-proportion="-7.5">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="study.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/controllers/study.js">
+      <file leaf-file-name="iadssNavBar.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/partials/iadssNavBar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="2" selection-start="159" selection-end="159" vertical-scroll-proportion="0.0">
+            <state line="34" column="6" selection-start="1462" selection-end="1462" vertical-scroll-proportion="-21.25">
               <folding />
             </state>
           </provider>
@@ -163,22 +160,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/../../research-us/node/researchus/views/layout.jade" />
-        <option value="$PROJECT_DIR$/app/views/main.html" />
-        <option value="$PROJECT_DIR$/Gruntfile.js" />
-        <option value="/tmp/Gruntfile.js" />
-        <option value="$PROJECT_DIR$/app/scripts/directives/iadssNavBar.js" />
-        <option value="$PROJECT_DIR$/../../research-us/node/researchus/views/partials/readStudy.jade" />
-        <option value="$PROJECT_DIR$/app/index.html" />
-        <option value="$PROJECT_DIR$/app/styles/main.css" />
-        <option value="$PROJECT_DIR$/app/views/study.html" />
-        <option value="$PROJECT_DIR$/app/views/readStudy.html" />
         <option value="$PROJECT_DIR$/app/scripts/app.js" />
         <option value="$PROJECT_DIR$/app/scripts/services/study.js" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/study.js" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/readStudy.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/routes/study.js" />
+        <option value="$PROJECT_DIR$/app/partials/header.html" />
+        <option value="$PROJECT_DIR$/app/views/study.html" />
+        <option value="$PROJECT_DIR$/app/scripts/directives/iadssNavBar.js" />
+        <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/partials/iadssSideBar.html" />
+        <option value="$PROJECT_DIR$/app/scripts/directives/iadssSideBar.js" />
+        <option value="$PROJECT_DIR$/../../research-us/node/researchus/views/partials/imageList.jade" />
+        <option value="$PROJECT_DIR$/app/partials/imageList.html" />
+        <option value="$PROJECT_DIR$/app/scripts/directives/iadssImageList.js" />
+        <option value="$PROJECT_DIR$/app/views/readStudy.html" />
       </list>
     </option>
   </component>
@@ -293,24 +290,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="styles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iadss_web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iadss_web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="scripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -381,6 +360,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iadss_web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="iadss_web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -390,6 +387,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="last_opened_file_path" value="/usr/bin/node" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
@@ -525,88 +523,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/scripts/directives/iadssNavBar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="14" selection-start="59" selection-end="59" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/spec/directives/iadssNavBar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="45" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../research-us/node/researchus/views/partials/readStudy.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="16" selection-start="509" selection-end="509" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../research-us/node/researchus/views/index.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="8" selection-start="56" selection-end="357" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="45" selection-start="1829" selection-end="1832" vertical-scroll-proportion="-11.632653">
-          <folding>
-            <element signature="tag#div#0;tag#div#0;tag#div#1;tag#body#0;tag#html#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="21" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/study.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="14" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/readStudy.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="79" selection-start="241" selection-end="241" vertical-scroll-proportion="-5.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="26" selection-start="553" selection-end="553" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/controllers/study.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="2" selection-start="159" selection-end="159" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/readStudy.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="23" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -634,7 +553,84 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/study.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="51" selection-start="517" selection-end="517" vertical-scroll-proportion="0.48622367">
+        <state line="20" column="51" selection-start="517" selection-end="517" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/study.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="19" selection-start="19" selection-end="19" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/directives/iadssNavBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="41" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="14" selection-start="1638" selection-end="1638" vertical-scroll-proportion="-18.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/partials/iadssNavBar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="6" selection-start="1462" selection-end="1462" vertical-scroll-proportion="-21.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/partials/iadssSideBar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="6" selection-start="293" selection-end="293" vertical-scroll-proportion="-7.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/directives/iadssSideBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="312" selection-end="312" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../research-us/node/researchus/views/partials/imageList.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="34" selection-start="1247" selection-end="1247" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/partials/iadssImageList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="14" selection-start="94" selection-end="1570" vertical-scroll-proportion="-20.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/directives/iadssImageList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="10" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/readStudy.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="23" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/readStudy.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="42" selection-start="487" selection-end="487" vertical-scroll-proportion="0.47285464">
           <folding />
         </state>
       </provider>

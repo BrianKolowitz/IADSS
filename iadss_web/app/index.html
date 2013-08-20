@@ -28,60 +28,12 @@
 
     <!-- Add your site or application content here -->
     <!-- navbar -->
-    <div class='navbar navbar-inverse navbar-fixed-top'>
-        <div class='navbar-inner'>
-            <div class='container-fluid'>
-                <button data-toggle='collapse' data-target='.nav-collapse' class='btn btn-navbar'>
-                    <span class='icon-bar'></span>
-                    <span class='icon-bar'></span>
-                    <span class='icon-bar'></span>
-                </button>
-                <a href='/' class='brand'>Research Coordinator</a>
-                <div class='nav-collapse collapse'>
-                    <div ng-hide='userLoggedIn'>
-                        <p class='navbar-text pull-right'>
-                            <a href='/login' ng-cloak class='navbar-link'>Login</a>
-                        </p>
-                    </div>
-                    <div ng-show='userLoggedIn'>
-                        <p class='navbar-text pull-right'>Logged in as: &nbsp;
-                            <a href=''#' ng-cloak class='navbar-link'>{{authenticatedUser}}
-                            &nbsp; | &nbsp;
-                            <a href='#' ng-cloak ng-click='logout($event)' class='navbar-link'>Logout</a>
-                            </a>
-                        </p>
-                    </div>
-                    <ul class='nav'>
-                        <li class='active'>
-                            <a href='/'>Home</a>
-                        </li>
-                        <li>
-                            <a href='/'>Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    <div x-iadss-nav-bar></div>
+    <!-- content -->
     <div class="container-fluid">
         <div class="row-fluid">
             <!-- sidebar -->
-            <div class="span3">
-                <div class='well sidebar-nav'>
-                    <ul class='nav nav-list'>
-                        <li class='nav-header'>
-                            Options
-                        </li>
-                        <li>
-                            <a href='/#/study'>Study List</a>
-                        </li>
-                        <li>
-                            <a href='/#/patient'>Patient List</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            <div class="span3" x-iadss-side-bar></div>
             <div class="span9" ng-view></div>
         </div>
     </div>
@@ -128,6 +80,8 @@
         <script src="scripts/services/user.js"></script>
         <script src="scripts/directives/iadssNavBar.js"></script>
         <script src="scripts/controllers/readStudy.js"></script>
+        <script src="scripts/directives/iadssSideBar.js"></script>
+        <script src="scripts/directives/iadssImageList.js"></script>
         <!-- endbuild -->
 </body>
 </html>
