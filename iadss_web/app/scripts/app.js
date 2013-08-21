@@ -7,17 +7,29 @@ angular.module('iadssWebApp', ['ngResource'])
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-      .when('/study', {
-        templateUrl: 'views/study.html',
-        controller: 'StudyCtrl'
-      })
       .when('/user', {
         templateUrl: 'views/user.html',
         controller: 'UserCtrl'
       })
-      .when('/readStudy/:studyId', {
-        templateUrl: 'views/readStudy.html',
-        controller: 'ReadStudyCtrl'
+      .when('/study', {
+        templateUrl: 'views/study.html',
+        controller: 'StudyCtrl'
+      })
+      .when('/studyRead/:studyId', {
+        templateUrl: 'views/studyRead.html',
+        controller: 'StudyReadCtrl'
+      })
+      .when('/studyDelete/:studyId', {
+        templateUrl: 'views/studyDelete.html',
+        controller: 'StudyDeleteCtrl'
+      })
+      .when('/studyAdd', {
+        templateUrl: 'views/studyAdd.html',
+        controller: 'StudyAddCtrl'
+      })
+      .when('/studyEdit/:studyId', {
+        templateUrl: 'views/studyEdit.html',
+        controller: 'StudyEditCtrl'
       })
       .otherwise({
         redirectTo: '/'

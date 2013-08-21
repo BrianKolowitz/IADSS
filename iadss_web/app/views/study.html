@@ -1,4 +1,5 @@
 <h3>Study List</h3>
+
 <table class='table table-striped'>
     <caption>Research Studie(s)</caption>
     <thead>
@@ -10,7 +11,7 @@
         <th>&nbsp;</th>
         <th>&nbsp;</th>
         <th>
-            <a href='/addStudy/{{study.id}}' class='btn pull-right'>
+            <a href='/#/studyAdd/' class='btn pull-right'>
                 <i class='icon-plus'></i>
             </a>
         </th>
@@ -23,11 +24,11 @@
         <td>{{study.patient.medicalRecordNumber}}</td>
         <td>{{study.images.length}}</td>
         <td>
-            <a href='/#/readStudy/{{study.id}}' class='.btn'>View</a></td>
+            <a href='/#/studyRead/{{study.id}}' class='.btn'>View</a></td>
         <td>
-            <a href='/editStudy/{{study.id}}' class='.btn'>Edit</a></td>
+            <a href='/#/studyEdit/{{study.id}}' class='.btn'>Edit</a></td>
         <td>
-            <a href='/deleteStudy/{{study.id}}' class='.btn'>Delete</a></td>
+            <a href='/#/studyDelete/{{study.id}}' class='.btn'>Delete</a></td>
     </tr>
     </tbody>
 </table>

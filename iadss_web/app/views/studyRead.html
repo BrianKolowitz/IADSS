@@ -1,4 +1,4 @@
-<h2>View Study</h2>
+<h3>View Study</h3>
 
 <p>
     <label>Accession Number: {{study.accessionNumber}}</label>
@@ -19,13 +19,13 @@
             <div x-iadss-image-list></div>
         </div>
     </div>
-</div>
-<hr />
-<div class='row'>
-    <a href='/editStudy/{{study.id}}' class='btn'>
-        <i class='icon-pencil'>Edit</i>
-    </a>
-    <a href='/deleteStudy/{{study.id}}' class='btn'>
-        <i class='icon-trash'>Delete</i>
-    </a>
+    <hr />
+    <div class='row'>
+        <a href='/#/studyEdit/{{study.id}}' class='btn'>
+            <i class='icon-pencil'>Edit</i>
+        </a>
+        <a href='/#/studyDelete/{{study.id}}' class='btn'>
+            <i class='icon-trash'>Delete</i>
+        </a>
+    </div>
 </div>

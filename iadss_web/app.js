@@ -36,9 +36,15 @@ app.get('/', function(request, response) {
     response.render('index.html')
 });
 
-app.get('/api/users', user.list);
-app.get('/api/studies', study.query);
-app.get('/api/studies/:studyId', study.get);
+app.get('/api/user', user.query);
+app.get('/api/user/:userId', user.get);
+
+
+app.get('/api/study', study.query);
+app.get('/api/study/:studyId', study.get);
+app.post('/api/study', study.add);
+app.put('/api/study/:studyId', study.edit);
+app.delete('/api/study/:studyId', study.delete);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

@@ -1,0 +1,33 @@
+<h3>Add a New Study</h3>
+
+<form class='form-horizontal'>
+    <fieldset>
+        <div class='control-group'>
+            <label class='control-label'>Accession Number:</label>
+            <div class='controls'>
+                <input ng-model='study.accessionNumber' placeholder="" />
+            </div>
+        </div>
+        <div class='control-group'>
+            <label class='control-label'>Patient's Name:</label>
+            <div class='controls'>
+                <input ng-model='study.patient.name' placeholder="" />
+            </div>
+        </div>
+        <div class='control-group'>
+            <label class='control-label'>Medical Record Number:</label>
+            <div class='controls'>
+                <input ng-model='study.patient.medicalRecordNumber' placeholder="" />
+            </div>
+        </div>
+        <div class='form-actions'>
+            <h3>Are you sure you want to add this study?</h3>
+            <button ng-click='addStudy()' class='btn'>
+                <i class='icon-ok'>Yes</i>
+            </button>
+            <button ng-click='cancel()' class='btn'>
+                <i class='icon-remove'>No</i>
+            </button>
+        </div>
+    </fieldset>
+</form>

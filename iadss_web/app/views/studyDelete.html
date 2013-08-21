@@ -1,0 +1,43 @@
+<h3>Delete Study</h3>
+
+<div class='control-group'>
+    <label class='control-label'>Accession Number:</label>
+    <div class='controls'>
+        {{study.accessionNumber}}
+    </div>
+</div>
+<div class='control-group'>
+    <label class='control-label'>Patient's Name:</label>
+    <div class='controls'>
+        {{study.patient.name}}
+    </div>
+</div>
+<div class='control-group'>
+    <label class='control-label'>Medical Record Number:</label>
+    <div class='controls'>
+        {{study.patient.medicalRecordNumber}}
+    </div>
+</div>
+
+<hr />
+
+<div class='row'>
+    <div class='row-fluid'>
+        <label class='pagination-centered'>{{study.images.length}} Image(s)</label>
+    </div>
+    <div class='row'>
+        <div class='span9'>
+            <div x-iadss-image-list></div>
+        </div>
+    </div>
+</div>
+
+<div class='form-actions'>
+    <h3>Are you sure you want to delete this study?</h3>
+    <button ng-click='deleteStudy()' class='btn'>
+        <i class='icon-ok'>Yes</i>
+    </button>
+    <button ng-click='cancel()' class='btn'>
+        <i class='icon-remove'>No</i>
+    </button>
+</div>
