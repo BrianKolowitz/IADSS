@@ -2,8 +2,6 @@
 /**
  * Module dependencies.
  */
-
-var express = require('express');
 var routes = require('./routes');
 var user = require('./routes/user');
 var study = require('./routes/study');
@@ -12,6 +10,7 @@ var http = require('http');
 var path = require('path');
 var orm_map = require('./orm_map');
 
+var express = require('express');
 var app = express();
 
 // all environments
@@ -55,3 +54,5 @@ app.delete('/api/study/:studyId/image/:imageId', image.delete);
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
+
+module.exports = app;
