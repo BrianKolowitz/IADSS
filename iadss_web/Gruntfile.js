@@ -222,7 +222,14 @@ module.exports = function (grunt) {
     },
     // Put files not handled in other tasks here
     copy: {
-      dist: {
+        components: {
+        files: [{
+            expand: true,
+            flatten: true,
+            src: '<%= yeoman.app %>/bower_components/bootstrap-sass/docs/assets/img/glyphicons-*.*',
+            dest: '<%= yeoman.app %>/img'
+            }]},
+        dist: {
         files: [{
           expand: true,
           dot: true,
