@@ -31,6 +31,10 @@ angular.module('iadssWebApp', ['ngResource'])
         templateUrl: 'views/studyEdit.html',
         controller: 'StudyEditCtrl'
       })
+      .when('/image', {
+        templateUrl: 'views/image.html',
+        controller: 'ImageCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

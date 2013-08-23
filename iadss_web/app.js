@@ -7,6 +7,7 @@ var express = require('express');
 var routes = require('./routes');
 var user = require('./routes/user');
 var study = require('./routes/study');
+var image = require('./routes/image');
 var http = require('http');
 var path = require('path');
 var orm_map = require('./orm_map');
@@ -45,6 +46,11 @@ app.get('/api/study/:studyId', study.get);
 app.post('/api/study', study.add);
 app.put('/api/study/:studyId', study.edit);
 app.delete('/api/study/:studyId', study.delete);
+
+app.get('/api/study/:studyId/image/:imageId', image.get);
+app.post('/api/study/:studyId/image', image.add);
+app.put('/api/study/:studyId/image/:imageId', image.edit);
+app.delete('/api/study/:studyId/image/:imageId', image.delete);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
