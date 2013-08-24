@@ -224,11 +224,18 @@ module.exports = function (grunt) {
     copy: {
         components: {
         files: [{
-            expand: true,
-            flatten: true,
-            src: '<%= yeoman.app %>/bower_components/bootstrap-sass/docs/assets/img/glyphicons-*.*',
-            dest: '<%= yeoman.app %>/img'
-            }]},
+                expand: true,
+                flatten: true,
+                src: '<%= yeoman.app %>/bower_components/bootstrap/docs/assets/img/glyphicons-*.png',
+                dest: '<%= yeoman.app %>/img'
+            },
+            {
+                expand: true,
+                flatten: true,
+                src: '<%= yeoman.app %>/bower_components/bootstrap/docs/assets/css/bootstrap*.css',
+                dest: '<%= yeoman.app %>/styles'
+            }
+        ]},
         dist: {
         files: [{
           expand: true,
