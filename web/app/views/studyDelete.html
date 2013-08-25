@@ -1,23 +1,14 @@
 <h3>Delete Study</h3>
 
-<div class='control-group'>
-    <label class='control-label'>Accession Number:</label>
-    <div class='controls'>
-        {{study.accessionNumber}}
-    </div>
-</div>
-<div class='control-group'>
-    <label class='control-label'>Patient's Name:</label>
-    <div class='controls'>
-        {{study.patient.name}}
-    </div>
-</div>
-<div class='control-group'>
-    <label class='control-label'>Medical Record Number:</label>
-    <div class='controls'>
-        {{study.patient.medicalRecordNumber}}
-    </div>
-</div>
+<p>
+    <label>Accession Number: {{study.accessionNumber}}</label>
+</p>
+<p>
+    <label>Patient Name: {{study.patient.name}}</label>
+</p>
+<p>
+    <label>Medical Record Number: {{study.patient.medicalRecordNumber}}</label>
+</p>
 
 <hr />
 

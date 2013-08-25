@@ -226,13 +226,13 @@ module.exports = function (grunt) {
         files: [{
                 expand: true,
                 flatten: true,
-                src: '<%= yeoman.app %>/bower_components/bootstrap/docs/assets/img/glyphicons-*.png',
+                src: '<%= yeoman.app %>/bower_components/bootstrap-jasny/docs/assets/img/glyphicons-*.png',
                 dest: '<%= yeoman.app %>/img'
             },
             {
                 expand: true,
                 flatten: true,
-                src: '<%= yeoman.app %>/bower_components/bootstrap/docs/assets/css/bootstrap*.css',
+                src: '<%= yeoman.app %>/bower_components/bootstrap-jasny/docs/assets/css/bootstrap*.css',
                 dest: '<%= yeoman.app %>/styles'
             }
         ]},

@@ -8,8 +8,9 @@
                 <img ng-src='api/study/{{study.id}}/image/{{image.id}}' width='64' height='64' class='img-polaroid' />
             </a>
                 <p>
-                    <label class='checkbox'>Is Normal?</label>
-                    <input type='checkbox' ng-model='image.normal'/>
+                    <label class='checkbox'>Is Normal?
+                        <input type='checkbox' ng-model='image.normal'/>
+                    </label>
                 </p>
                 <p>
                     <textarea rows='3' ng-model='image.report'></textarea>
@@ -25,8 +26,9 @@
                 <img ng-src='api/study/{{study.id}}/image/{{image.id}}' width='64' height='64' class='img-polaroid' />
             </a>
             <p>
-                <label class='checkbox'>Is Normal?</label>
-                <input type='checkbox' ng-model='image.normal' disabled/>
+                <label class='checkbox'>Is Normal?
+                    <input type='checkbox' ng-model='image.normal' disabled/>
+                </label>
             </p>
             <p>
                 {{image.report}}
