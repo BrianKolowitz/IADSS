@@ -21,19 +21,14 @@
 
 <hr />
 
-<div class='row'>
-    <div class='row-fluid'>
-        <button data-toggle='modal' data-target='#addImageModal' class='btn pull-right'>
-            <i class='icon-plus'></i>Add Image
-        </button>
-        <label class='pagination-centered'>{{study.images.length}} Image(s)</label>
-    </div>
-    <div class='row'>
-        <div class='span9'>
-            <div x-iadss-image-list></div>
-        </div>
-    </div>
+<div>
+    <button data-toggle='modal' data-target='#addImageModal' class='btn pull-right'>
+        <i class='icon-plus'></i>Add Image
+    </button>
+    <label class='pagination-centered'>{{study.images.length}} Image(s)</label>
 </div>
+
+<div x-iadss-image-list></div>
 
 <div class='form-actions'>
     <h3>Are you sure you want to save this study?</h3>

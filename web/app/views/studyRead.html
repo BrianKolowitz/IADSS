@@ -11,16 +11,12 @@
 </p>
 
 <hr />
-<div class='row'>
-    <div class='row-fluid'>
-        <label class='pagination-centered'>{{study.images.length}} Image(s)</label>
-    </div>
-    <div class='row'>
-        <div class='span9'>
-            <div x-iadss-image-list></div>
-        </div>
-    </div>
+
+<div>
+    <label class='pagination-centered'>{{study.images.length}} Image(s)</label>
 </div>
+
+<div x-iadss-image-list></div>
 
 <div class='form-actions'>
     <a href='/#/studyEdit/{{study.id}}' class='btn'>

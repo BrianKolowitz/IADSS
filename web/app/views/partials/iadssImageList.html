@@ -1,38 +1,27 @@
-<ul class='thumbnails.per3'>
-    <li ng-repeat='image in study.images' class='span3'>
-        <div ng-show='!readonly' class='thumbnail'>
-            <button ng-click='deleteImage(image)' class='btn pull-right'>
+<ul class='thumbnails'>
+    <li ng-repeat='image in study.images' class=''>
+        <div class='thumbnail' style='float: left;'>
+            <button ng-show='!readonly' ng-click='deleteImage(image)' class='btn pull-right'>
                 <i class='icon-trash'></i>
             </button>
             <a href='api/study/{{study.id}}/image/{{image.id}}' alt='{{image.originalFileName}}' target='_blank'>
-                <img ng-src='api/study/{{study.id}}/image/{{image.id}}' width='64' height='64' class='img-polaroid' />
+                <div style='max-width: 64px; max-height: 64px; min-width: 64px; min-height: 64px;'>
+                    <img ng-src='api/study/{{study.id}}/image/{{image.id}}' class='img-polaroid' />
+                </div>
             </a>
                 <p>
                     <label class='checkbox'>Is Normal?
-                        <input type='checkbox' ng-model='image.normal'/>
+                        <input type='checkbox' ng-model='image.normal' ng-readonly='readonly' />
                     </label>
                 </p>
                 <p>
-                    <textarea rows='3' ng-model='image.report'></textarea>
+                    <textarea rows='3' ng-model='image.report' style='float:left' ng-readonly='readonly'></textarea>
                 </p>
                 <p>
-                    <button ng-click='saveImage(image)' class='btn'>
+                    <button ng-show='!readonly' ng-click='saveImage(image)' class='btn'>
                         <i class='icon-ok'></i>Save
                     </button>
                 </p>
-        </div>
-        <div ng-show='readonly' class='thumbnail'>
-            <a href='api/study/{{study.id}}/image/{{image.id}}' alt='{{image.originalFileName}}' target='_blank'>
-                <img ng-src='api/study/{{study.id}}/image/{{image.id}}' width='64' height='64' class='img-polaroid' />
-            </a>
-            <p>
-                <label class='checkbox'>Is Normal?
-                    <input type='checkbox' ng-model='image.normal' disabled/>
-                </label>
-            </p>
-            <p>
-                {{image.report}}
-            </p>
         </div>
     </li>
 </ul>
