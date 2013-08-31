@@ -1,18 +1,21 @@
 <div class="row-fluid">
-<header class="span12 hero-unit">
-    <h1>IADSS</h1>
-    <h5>Image Analysis and Decision Support for Ultrasound Technology</h5>
-    <hr />
-    <h3>Authors and Contributors</h3>
-    <p>
-        <ul>
-            <li>G. Crofts, PhD, School of Health Sciences, University of Salford, UK</li>
-            <li>R. Padman, PhD, The H. John Heinz III College, Carnegie Mellon University, USA</li>
-            <li>O. Alani, PhD, School of Computing, Science and Engineering, University of Salford, UK</li>
-            <li>F. Meziane, PhD, School of Computing, Science and Engineering, University of Salford, UK</li>
-            <li>N. Maharaja, The H. John Heinz III College, Carnegie Mellon University, USA</li>
-            <li>B.J. Kolowitz, DSc, UPMC, USA</li>
-        </ul>
-    </p>
-</header>
+    <header class="span12 hero-unit">
+        <h1>IADSS</h1>
+        <h5>Image Analysis and Decision Support for Ultrasound Technology</h5>
+        <hr />
+        <h3>Authors and Contributors</h3>
+        <p>
+            <ul ng-repeat="contributor in contributors">
+                <li>{{contributor.name}}, {{contributor.association}}, {{contributor.country}}</li>
+            </ul>
+        </p>
+    </header>
 </div>
+<!--
+<div>
+    <tabs>
+        <pane ng-repeat="pane in panes" heading="{{pane.title}}" active="pane.active">
+            <div ng-include="pane.template"></div>
+        </pane>
+    </tabs>
+</div>-->
