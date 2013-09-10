@@ -17,10 +17,10 @@ angular.module('iadssWebApp')
         { name: "B.J. Kolowitz, DSc", association: "UPMC", country: "USA" }
     ];
 
-    /*$scope.panes = [
+    $scope.panes = [
         { title:"Home", template:"/" },
         { title:"Study List", template:"/#/study" },
         { title:"Patient List", template:"/#/patient" },
         { title:"Fake", template:"/#/fake" }
-    ];*/
+    ];
   }]);
