@@ -2,5 +2,8 @@
 
 angular.module('iadssWebApp')
     .factory('Study', ['$resource', function($resource) {
-        return $resource('/api/study/:studyId', { studyId: '@id' }, { update: { method: 'put' } });
+        return $resource('/api/study/:studyId',
+            { studyId: '@id' }, {
+                update: { method: 'put' }
+            });
     }]);
