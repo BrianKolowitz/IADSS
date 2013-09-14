@@ -23,4 +23,5 @@ angular.module('iadssWebApp')
         { title:"Patient List", template:"/#/patient" },
         { title:"Fake", template:"/#/fake" }
     ];
-  }]);
+
+}]);

@@ -1,18 +1,18 @@
 'use strict';
 
-describe('Service: study', function () {
+describe('Service: Study', function () {
 
   // load the service's module
   beforeEach(module('iadssWebApp'));
 
   // instantiate service
-  var study;
-  beforeEach(inject(function(_study_) {
-    study = _study_;
+  var Study;
+  beforeEach(inject(function(_Study_) {
+    Study = _Study_;
   }));
 
   it('should do something', function () {
-    expect(!!study).toBe(true);
+    expect(!!Study).toBe(true);
   });
 
 });

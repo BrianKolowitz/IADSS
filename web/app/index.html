@@ -32,14 +32,19 @@
     <div x-iadss-nav-bar></div>
     <!-- content -->
 
+    <!--<div class="container">-->
+        <!--<div class="tabbable">-->
+            <!--<ul class="nav nav-tabs">-->
+                <!--<li class="active"><a href="/#/" data-toggle="tab">Home</a></li>-->
+                <!--<li><a href="/#/study" data-toggle="tab">Study List</a></li>-->
+                <!--<li><a href="/#/patient" data-toggle="tab">Patient List</a></li>-->
+            <!--</ul>-->
+    <!--</div>-->
     <div class="container">
         <div class="tabbable">
-            <ul class="nav nav-tabs">
-                <li class="active"><a href="/#/" data-toggle="tab">Home</a></li>
-                <li><a href="/#/study" data-toggle="tab">Study List</a></li>
-                <li><a href="/#/patient" data-toggle="tab">Patient List</a></li>
-            </ul>
-        </div>
+            <div x-iadss-tab-bar></div>
+    </div>
+
         <div ng-view></div>
     </div>
 
