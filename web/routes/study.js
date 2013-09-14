@@ -2,7 +2,23 @@ var Q = require('q');
 var EXTEND = require('extend');
 
 exports.query = function(req, res){
-    req.models.study.find({ }, function (err, studies) {
+    var params = { };
+
+    if ( typeof req.query.limit != 'undefined' ) {
+        console.log('limit: ' + req.query.limit);
+        params = EXTEND(params, {
+            limit: parseInt(req.query.limit)
+        });
+    }
+
+    if ( typeof req.query.offset != 'undefined' ) {
+        console.log('offset: ' + req.query.offset);
+        params = EXTEND(params, {
+            offset: parseInt(req.query.offset)
+        });
+    }
+
+    req.models.study.find({ }, params, function (err, studies) {
         if ( err != null )
             res.json(false); // todo : return error
         else
