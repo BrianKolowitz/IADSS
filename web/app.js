@@ -40,6 +40,7 @@ app.get('/api/user', user.query);
 app.get('/api/user/:userId', user.get);
 
 
+app.get('/api/study/info', study.info);
 app.get('/api/study', study.query);
 app.get('/api/study/:studyId', study.get);
 app.post('/api/study', study.add);

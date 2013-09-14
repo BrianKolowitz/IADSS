@@ -1,16 +1,14 @@
 'use strict';
 
 angular.module('iadssWebApp')
-    .controller('StudyCtrl', ['$scope', 'Study', function ($scope, Study) {
-        // select a count
+    .controller('StudyCtrl', ['$scope', 'StudyInfo', 'Study', function ($scope, StudyInfo, Study) {
         $scope.itemsPerPage = 5;
         $scope.totalItems = 0;
         $scope.currentPage = 1;
         $scope.maxSize = 5;
 
-        // get count
-        var studies = Study.query(function(){ // todo : replace with count query
-            $scope.totalItems = studies.length;
+        StudyInfo.count().success(function(studyCount) {
+            $scope.totalItems = studyCount;
 
             $scope.$watch('currentPage', function() {
                 $scope.studies = Study.query({
@@ -18,5 +16,6 @@ angular.module('iadssWebApp')
                     offset: ($scope.currentPage - 1) * $scope.itemsPerPage
                 });
             });
+
         });
   }]);

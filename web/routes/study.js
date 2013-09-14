@@ -1,7 +1,16 @@
 var Q = require('q');
 var EXTEND = require('extend');
 
-exports.query = function(req, res){
+exports.info = function(req, res) {
+    req.models.study.find({ }, function (err, studies) {
+        if ( err != null )
+            res.json(false); // todo : return error
+        else
+            res.json(studies.length);
+    });
+}
+
+exports.query = function(req, res) {
     var params = { };
 
     if ( typeof req.query.limit != 'undefined' ) {
