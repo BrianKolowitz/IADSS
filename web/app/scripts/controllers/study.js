@@ -16,26 +16,21 @@ angular.module('iadssWebApp')
         // ----------- Page load events -----------//
         // ----------------------------------------//
         StudyInfo.count()
-            .then(function (response) {
-                console.log('count returned');
+            .success(function (response) {
                 $scope.totalItems = angular.copy(response);
             });
 
         $scope.$watch('currentPage', function (){
-            console.log('watch setup');
             $scope.studies = _getStudiesForPage();
         });
 
         // ----------------------------------------//
         // ----------- private functions ----------//
         // ----------------------------------------//
-
         function _getStudiesForPage () {
-            console.log('query for studies');
             return Study.query({
                 limit: $scope.itemsPerPage,
                 offset: Number($scope.currentPage - 1) * $scope.itemsPerPage
             });
         };
-
     }]);
