@@ -59,7 +59,7 @@ exports.add = function (req, res) {
     Q.fcall(function () {
         var d = {
             studyId: req.params.studyId,
-            normal: req.body.normal,
+            normal: (req.body.normal == "true"),
             report: req.body.report
         };
 
