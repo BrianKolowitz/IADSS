@@ -1,37 +1,40 @@
-
-<form action='/api/study/{{study.id}}/image' method='post' enctype='multipart/form-data' class='form-horizontal'>
+<div>
     <div class='modal-header'>
-        <button data-dismiss='modal' aria-hidden='true' class='close'>×</button>
-        <h3 id='addImageModalLabel'>Add Image</h3>
+        <button class='close' ng-click="cancel()">×</button>
+        <h3>Add Image</h3>
     </div>
     <div class='modal-body'>
-        <p>
-            <fieldset>
-                <div class='control-group'>
-                    <div class='controls'>
-                        <div data-provides='fileupload' class='fileupload fileupload-new'>
-                            <div style='width: 148px; height: 111px;' class='fileupload-new thumbnail'>
-                                <img src='http://www.placehold.it/200x150/EFEFEF/AAAAAA&text=no+image' />
-                            </div>
-                            <div style='max-width: 148px; max-height: 111px; line-height: 20px;' class='fileupload-preview fileupload-exists thumbnail'></div>
-                            <span class='btn btn-file'>
-                                <span class='fileupload-new'>Select image</span>
-                                <span class='fileupload-exists'>Change</span>
-                                <input type='file' name='studyFile' />
-                            </span>
-                            <a href='' data-dismiss='fileupload' class='btn fileupload-exists'>Remove</a>
-                            <label for='normal' class='checkbox fileupload-exists'>Is Normal?
-                                <input type='checkbox' name='normal' />
-                            </label>
-                            <textarea rows='3' name='report' class='fileupload-exists' value='{{image.report}}' />
+        <div ng-hide="progressVisible">
+            <div class='control-group'>
+                <div class='controls'>
+                    <div data-provides='fileupload' class='fileupload fileupload-new'>
+                        <div style='width: 148px; height: 111px;' class='fileupload-new thumbnail'>
+                            <img src='http://www.placehold.it/200x150/EFEFEF/AAAAAA&text=no+image' />
                         </div>
+                        <div style='max-width: 148px; max-height: 111px; line-height: 20px;' class='fileupload-preview fileupload-exists thumbnail'></div>
+                        <span class='btn btn-file'>
+                            <span class='fileupload-new'>Select image</span>
+                            <span class='fileupload-exists'>Change</span>
+                            <input type='file' onchange='angular.element(this).scope().setFiles(this)' />
+                        </span>
+                        <a href='' data-dismiss='fileupload' class='btn fileupload-exists'>Remove</a>
+                        <label for='normal' class='checkbox fileupload-exists'>Is Normal?
+                            <input type='checkbox' ng-model='study.normal' />
+                        </label>
+                        <textarea rows='3' ng-model='study.report' class='fileupload-exists' />
                     </div>
                 </div>
-            </fieldset>
-        </p>
+            </div>
+        </div>
+        <div ng-show="progressVisible">
+            <div class="percent">{{progress}}%</div>
+            <div class="progress-bar">
+                <div class="uploaded" ng-style="{'width': progress+'%'}"></div>
+            </div>
+        </div>
     </div>
     <div class='modal-footer'>
-        <button type='submit' class='btn btn-primary'>Add</button>
-        <button data-dismiss='modal' aria-hidden='true' class='btn'>Cancel</button>
+        <button class='btn btn-primary' ng-click="ok()">Add</button>
+        <button class='btn btn-warning' ng-click="cancel()">Cancel</button>
     </div>
-</form>
+</div>

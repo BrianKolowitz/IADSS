@@ -22,7 +22,7 @@
 <hr />
 
 <div>
-    <button data-toggle='modal' data-target='#addImageModal' class='btn pull-right'>
+    <button class='btn pull-right' ng-click='openAddImage()'>
         <i class='icon-plus'></i>Add Image
     </button>
     <label class='pagination-centered'>{{study.images.length}} Image(s)</label>
@@ -40,7 +40,4 @@
     </button>
 </div>
 
-<div id='addImageModal' tabindex='-1' role='dialog' aria-labelledby='addImageModalLabel' aria-hidden='true' class='modal hide fade'>
-    <ng:include src="'/views/partials/iadssAddImage.html'"></ng:include>      <!-- TODO : figure out how to get this to work as a directive -->
-</div>
-
+<div x-iadss-add-image study-id='{{study.id}}'></div>

@@ -1,12 +1,16 @@
 'use strict';
 
 angular.module('iadssWebApp')
-  .directive('iadssImageList', [function () {
+  .directive('iadssImageList', ['_', 'Image', function (_, Image) {
     return {
       templateUrl: '/views/partials/iadssImageList.html',
       restrict: 'A',
-      link: function postLink(scope, element, attrs) {
-        //element.text('this is the iadssImageList directive');
+      controller: function($scope) {
+          $scope.deleteImage = function(image) {
+              Image.remove({ studyId: image.study_id, imageId: image.id });
+
+              $scope.study.images = _.without($scope.study.images, _.findWhere($scope.study.images, { id: image.id }));
+          };
       }
     };
   }]);

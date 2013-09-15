@@ -132,30 +132,31 @@ exports.add = function (req, res) {
             console.log("normal %s", d.normal);
             console.log("report %s", d.report);
             var deferred = Q.defer();
+            var newImage = {
+                originalFileName: req.files.studyFile.name,
+                uniqueFileName: d.newFileName,
+                filePath: d.newPath,
+                study_id: d.study.id,
+                study_patient_id: d.study.patient_id,
+                normal: d.normal,
+                report: d.report
+            };
             req.models.image.create(
                 [
-                    {
-                        originalFileName: req.files.studyFile.name,
-                        uniqueFileName: d.newFileName,
-                        filePath: d.newPath,
-                        study_id: d.study.id,
-                        study_patient_id: d.study.patient_id,
-                        normal: d.normal,
-                        report: d.report
-                    }
+                    newImage
                 ], function (error, items) {
                     if (error) {
                         console.log("addStudy insert image error: %s", err);
                         deferred.reject(new Error(error));
                     } else {
                         //res.json(true);
-                        deferred.resolve(d);
+                        deferred.resolve(newImage);
                     }
                 });
             return deferred.promise;
-        }).then(function (d) {
+        }).then(function (newImage) {
             console.log("add study success");
-            res.redirect("back"); // todo : don't redirect back but return a result and handle in the controller //res.json(true);
+            res.json(newImage);
         }).fail(function (error) {
             console.log("add study fail %s", error);
             res.json(false);

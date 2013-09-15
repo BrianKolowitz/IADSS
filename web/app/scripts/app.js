@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('iadssWebApp', ['ngResource', 'ui.bootstrap'])
+angular.module('iadssWebApp', ['ngResource', 'ui.bootstrap', 'underscore'])
   .config(['$routeProvider', function ($routeProvider) {
     $routeProvider
       .when('/', {

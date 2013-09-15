@@ -1,13 +1,13 @@
 'use strict';
 
 angular.module('iadssWebApp')
-    .directive('iadssTabBar', ['$location', function ($location) {
+    .directive('iadssTabBar', [function () {
         return {
             templateUrl: '/views/partials/iadssTabBar.html',
             restrict: 'A',
             scope: {
             },
-            controller: function ($scope) {
+            controller: function($scope) {
 
                 // alternatively, you could pass this tab
                 // definition object into the
