@@ -26,11 +26,8 @@
                 </div>
             </div>
         </div>
-        <div ng-show="progressVisible">
-            <div class="percent">{{progress}}%</div>
-            <div class="progress-bar">
-                <div class="uploaded" ng-style="{'width': progress+'%'}"></div>
-            </div>
+        <div ng-show="progressVisible" class="has-spinner active">
+            <i class="icon-spinner icon-spin icon-large"></i> Uploading...
         </div>
     </div>
     <div class='modal-footer'>
