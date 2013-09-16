@@ -11,6 +11,8 @@ angular.module('iadssWebApp')
         };
 
         $scope.progressVisible = false;
+        $scope.progressError = false;
+        $scope.progressErrorMessage = '';
 
         $scope.ok = function () {
             $scope.progressVisible = true;
@@ -30,9 +32,8 @@ angular.module('iadssWebApp')
                 $modalInstance.close(data);
                 $scope.progressVisible = false;
             }).error(function() {
-                alert("There was an error attempting to upload the file.");
-                $modalInstance.dismiss('error uploading file');
-                $scope.progressVisible = false;
+                $scope.progressErrorMessage = "There was an error attempting to upload the file.";
+                $scope.progressError = true;
             });
         };
 

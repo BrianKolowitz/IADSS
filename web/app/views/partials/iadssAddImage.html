@@ -27,11 +27,23 @@
             </div>
         </div>
         <div ng-show="progressVisible" class="has-spinner active">
-            <i class="icon-spinner icon-spin icon-large"></i> Uploading...
+            <div ng-hide="progressError">
+                <i class="icon-spinner icon-spin icon-large"></i> Uploading...
+            </div>
+            <div ng-show="progressError">
+                {{progressErrorMessage}}
+            </div>
         </div>
     </div>
     <div class='modal-footer'>
-        <button class='btn btn-primary' ng-click="ok()">Add</button>
-        <button class='btn btn-warning' ng-click="cancel()">Cancel</button>
+        <div ng-hide="progressVisible">
+            <button class='btn btn-primary' ng-click="ok()">Add</button>
+            <button class='btn btn-warning' ng-click="cancel()">Cancel</button>
+        </div>
+        <div ng-show="progressVisible">
+            <div ng-show="progressError">
+                <button class='btn btn-warning' ng-click="cancel()">Close</button>
+            </div>
+        </div>
     </div>
 </div>
