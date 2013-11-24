@@ -10,7 +10,6 @@ angular.module('iadssWebApp')
         $scope.totalItems = 0;
         $scope.currentPage = 1;
         $scope.maxSize = 5;
-        $scope.totalItems = 0;
 
         // ----------------------------------------//
         // ----------- Page load events -----------//
