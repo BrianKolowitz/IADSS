@@ -5,7 +5,9 @@
  */
 package edu.cmu.iadss.send_service;
 
+import com.google.gson.Gson;
 import edu.cmu.iadss.common.DicomSendTask;
+import edu.cmu.iadss.common.DicomWrapTask;
 import edu.cmu.iadss.common.QueueConsumer;
 import edu.cmu.iadss.common.QueuedTask;
 import java.io.IOException;
@@ -25,15 +27,17 @@ public class DicomSendTaskConsumer extends QueueConsumer {
         _dcmsnd = dcmsnd;
     }
 
-    protected void doWork(QueuedTask task) throws IOException {
-        DicomSendTask sendTask = (DicomSendTask)task;
+    protected void doWork(String message) throws IOException {
+        Gson gson = new Gson();
+        DicomSendTask task = gson.fromJson(message, DicomSendTask.class);
+        
         CommandLine cmdLine = new CommandLine(_dcmsnd);
         String destination = String.format("%s@%s:%d",
-                sendTask.getDestinationAe(),
-                sendTask.getDestinationIp(),
-                sendTask.getDestinationPort());
+                task.getDestinationAe(),
+                task.getDestinationIp(),
+                task.getDestinationPort());
         cmdLine.addArgument(destination);
-        cmdLine.addArgument(sendTask.getDicomFileName());
+        cmdLine.addArgument(task.getDicomFileName());
 
         DefaultExecutor executor;
         executor = new DefaultExecutor();

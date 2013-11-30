@@ -6,7 +6,6 @@
 
 package edu.cmu.iadss.common;
 
-import com.google.gson.Gson;
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
@@ -20,8 +19,8 @@ import java.util.logging.Logger;
  * @author vagrant
  */
 public abstract class QueueConsumer implements Runnable {
-    protected String _taskQueueName = "dicom_wrap_queue";
-    protected String _hostName = "localhost";
+    private final String _taskQueueName;
+    private final String _hostName;
     protected boolean _run = true;
     protected Connection _connection;
 
@@ -59,12 +58,10 @@ public abstract class QueueConsumer implements Runnable {
         while (_run) {
             QueueingConsumer.Delivery delivery = consumer.nextDelivery();
             String message = new String(delivery.getBody());
-            Gson gson = new Gson();
-            DicomSendTask wrapTask = gson.fromJson(message, DicomSendTask.class);
-            doWork(wrapTask);
+            doWork(message);
             channel.basicAck(delivery.getEnvelope().getDeliveryTag(), false);
         }
     }
 
-    protected abstract void doWork(QueuedTask task) throws IOException;
+    protected abstract void doWork(String message) throws IOException;
 }

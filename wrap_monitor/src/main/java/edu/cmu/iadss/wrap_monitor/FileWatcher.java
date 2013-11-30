@@ -36,7 +36,10 @@ public class FileWatcher {
     }
 
     public void Watch(Path pathToWatch, String extensionToWatch) throws IOException {
-        WatchKey registerKey = pathToWatch.register(_watcher, StandardWatchEventKinds.ENTRY_CREATE);
+        WatchKey registerKey = pathToWatch.register(
+                _watcher,
+                StandardWatchEventKinds.ENTRY_CREATE,
+                StandardWatchEventKinds.ENTRY_MODIFY);
         _extensionToWatch = extensionToWatch;
 
         for (;;) {
@@ -85,14 +88,13 @@ public class FileWatcher {
 
     protected void Process(Path filePath) throws IOException {
         // put the appropriate message on rabbitmq
-        
+
         List<String> lines = Files.readAllLines(filePath, Charset.defaultCharset());
         String json = StringUtils.join(lines, " ");
         Gson gson = new Gson();
         DicomWrapTask wrapTask = gson.fromJson(json, DicomWrapTask.class);
-        
+
         QueueProducer producer = new QueueProducer(_taskQueueName, _hostName);
         producer.publish(wrapTask);
     }
-
 }

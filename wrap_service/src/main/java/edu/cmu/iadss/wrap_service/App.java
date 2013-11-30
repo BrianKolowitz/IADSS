@@ -16,7 +16,7 @@ public class App {
 
         ExecutorService executor = Executors.newFixedThreadPool(1);
 
-        String taskQueueName = "dicom_send_queue";
+        String taskQueueName = "dicom_wrap_queue";
         String hostName = "localhost";
         String jpg2dcm = "/home/vagrant/Source/IADSS/dcm4che-2.0.28/bin/jpg2dcm";
         Runnable worker = new DicomWrapTaskConsumer(taskQueueName, hostName, jpg2dcm);
