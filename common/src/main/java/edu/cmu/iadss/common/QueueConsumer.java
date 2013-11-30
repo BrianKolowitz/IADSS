@@ -19,13 +19,13 @@ import java.util.logging.Logger;
  * @author vagrant
  */
 public abstract class QueueConsumer implements Runnable {
-    private final String _taskQueueName;
-    private final String _hostName;
+    protected final String _consumeTaskQueueName;
+    protected final String _hostName;
     protected boolean _run = true;
     protected Connection _connection;
 
     public QueueConsumer(String taskQueueName, String hostName)  {
-        _taskQueueName = taskQueueName;
+        _consumeTaskQueueName = taskQueueName;
         _hostName = hostName;
     }
 
@@ -51,17 +51,19 @@ public abstract class QueueConsumer implements Runnable {
         factory.setHost(_hostName);
         _connection = factory.newConnection();
         Channel channel = _connection.createChannel();
-        channel.queueDeclare(_taskQueueName, true, false, false, null);
+        channel.queueDeclare(_consumeTaskQueueName, true, false, false, null);
         channel.basicQos(1);
         QueueingConsumer consumer = new QueueingConsumer(channel);
-        channel.basicConsume(_taskQueueName, false, consumer);
+        channel.basicConsume(_consumeTaskQueueName, false, consumer);
         while (_run) {
             QueueingConsumer.Delivery delivery = consumer.nextDelivery();
             String message = new String(delivery.getBody());
-            doWork(message);
-            channel.basicAck(delivery.getEnvelope().getDeliveryTag(), false);
+            if ( doWork(message) )
+                channel.basicAck(delivery.getEnvelope().getDeliveryTag(), false);
+            else
+                channel.basicCancel("Error processing message"); // TODO add better error
         }
     }
 
-    protected abstract void doWork(String message) throws IOException;
+    protected abstract boolean doWork(String message) throws IOException;
 }

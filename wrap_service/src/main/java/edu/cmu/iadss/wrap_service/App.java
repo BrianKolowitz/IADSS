@@ -16,10 +16,21 @@ public class App {
 
         ExecutorService executor = Executors.newFixedThreadPool(1);
 
-        String taskQueueName = "dicom_wrap_queue";
+        String wrapTaskQueueName = "dicom_wrap_queue";
         String hostName = "localhost";
         String jpg2dcm = "/home/vagrant/Source/IADSS/dcm4che-2.0.28/bin/jpg2dcm";
-        Runnable worker = new DicomWrapTaskConsumer(taskQueueName, hostName, jpg2dcm);
+        String sendToTaskQueueName = "dicom_send_queue";
+        String sendToAe = "DCM4CHEE";
+        String sendToHost = "localhost";
+        int sendToPort = 11112;
+        Runnable worker = new DicomWrapTaskConsumer(
+                wrapTaskQueueName, 
+                hostName, 
+                jpg2dcm,
+                sendToTaskQueueName,
+                sendToAe,
+                sendToHost,
+                sendToPort);
         executor.execute(worker);
 
         System.out.println("DICOM Wrap Task Consumer - Press Enter to Exit");

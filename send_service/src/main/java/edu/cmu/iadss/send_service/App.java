@@ -18,7 +18,7 @@ public class App
 
         String taskQueueName = "dicom_send_queue";
         String hostName = "localhost";
-        String dcmsnd = "/home/vagrant/Source/IADSS/dcm4che-2.0.28/bin/dcnsnd";
+        String dcmsnd = "/home/vagrant/Source/IADSS/dcm4che-2.0.28/bin/dcmsnd";
         Runnable worker = new DicomSendTaskConsumer(taskQueueName, hostName, dcmsnd);
         executor.execute(worker);
 

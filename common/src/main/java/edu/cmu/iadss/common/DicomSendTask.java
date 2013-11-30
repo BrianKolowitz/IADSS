@@ -11,25 +11,10 @@ package edu.cmu.iadss.common;
  * @author vagrant
  */
 public class DicomSendTask extends QueuedTask {
-    private String configFileName;
     private String dicomFileName;
     private String destinationAe;
-    private String destinationIp;
+    private String destinationHost;
     private int destinationPort;
-
-    /**
-     * @return the configFileName
-     */
-    public String getConfigFileName() {
-        return configFileName;
-    }
-
-    /**
-     * @param configFileName the configFileName to set
-     */
-    public void setConfigFileName(String configFileName) {
-        this.configFileName = configFileName;
-    }
 
     /**
      * @return the dicomFileName
@@ -60,17 +45,17 @@ public class DicomSendTask extends QueuedTask {
     }
 
     /**
-     * @return the destinationIp
+     * @return the destinationHost
      */
-    public String getDestinationIp() {
-        return destinationIp;
+    public String getDestinationHost() {
+        return destinationHost;
     }
 
     /**
-     * @param destinationIp the destinationIp to set
+     * @param destinationHost the destinationHost to set
      */
-    public void setDestinationIp(String destinationIp) {
-        this.destinationIp = destinationIp;
+    public void setDestinationHost(String destinationHost) {
+        this.destinationHost = destinationHost;
     }
 
     /**

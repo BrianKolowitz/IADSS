@@ -7,9 +7,7 @@ package edu.cmu.iadss.send_service;
 
 import com.google.gson.Gson;
 import edu.cmu.iadss.common.DicomSendTask;
-import edu.cmu.iadss.common.DicomWrapTask;
 import edu.cmu.iadss.common.QueueConsumer;
-import edu.cmu.iadss.common.QueuedTask;
 import java.io.IOException;
 import org.apache.commons.exec.CommandLine;
 import org.apache.commons.exec.DefaultExecutor;
@@ -27,14 +25,14 @@ public class DicomSendTaskConsumer extends QueueConsumer {
         _dcmsnd = dcmsnd;
     }
 
-    protected void doWork(String message) throws IOException {
+    protected boolean doWork(String message) throws IOException {
         Gson gson = new Gson();
         DicomSendTask task = gson.fromJson(message, DicomSendTask.class);
-        
+
         CommandLine cmdLine = new CommandLine(_dcmsnd);
         String destination = String.format("%s@%s:%d",
                 task.getDestinationAe(),
-                task.getDestinationIp(),
+                task.getDestinationHost(),
                 task.getDestinationPort());
         cmdLine.addArgument(destination);
         cmdLine.addArgument(task.getDicomFileName());
@@ -43,10 +41,12 @@ public class DicomSendTaskConsumer extends QueueConsumer {
         executor = new DefaultExecutor();
         int exitValue;
         exitValue = executor.execute(cmdLine);
-        if (exitValue == 0) {
-            System.out.print("Success");
-        } else {
+        if (exitValue != 0) {
             System.out.printf("Error %d%n", exitValue);
+            return false;
         }
+
+        System.out.print("Success");
+        return true;
     }
 }

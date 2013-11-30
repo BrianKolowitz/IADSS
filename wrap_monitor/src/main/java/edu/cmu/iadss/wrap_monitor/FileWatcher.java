@@ -72,7 +72,10 @@ public class FileWatcher {
                 if (fileext.equalsIgnoreCase(_extensionToWatch)) {
                     Path child = pathToWatch.resolve(filename);
                     System.out.format("Found file %s%n", filename);
-                    Process(child);
+                    if ( doWork(child) )
+                    {
+                        Files.deleteIfExists(child);
+                    }
                 }
             }
 
@@ -86,7 +89,7 @@ public class FileWatcher {
         }
     }
 
-    protected void Process(Path filePath) throws IOException {
+    protected boolean doWork(Path filePath) throws IOException {
         // put the appropriate message on rabbitmq
 
         List<String> lines = Files.readAllLines(filePath, Charset.defaultCharset());
@@ -96,5 +99,6 @@ public class FileWatcher {
 
         QueueProducer producer = new QueueProducer(_taskQueueName, _hostName);
         producer.publish(wrapTask);
+        return true;
     }
 }
