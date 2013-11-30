@@ -3,3 +3,7 @@ dist
 .tmp
 .sass-cache
 app/bower_components
+/wrap_monitor/target/
+/wrap_service/nbproject/private/
+/common/target/
+/wrap_service/target/
